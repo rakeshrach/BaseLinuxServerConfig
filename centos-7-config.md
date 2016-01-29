@@ -26,5 +26,8 @@ Need to be sending keep alive packet every 30 seconds. Details at https://docs.o
 Add/modify the folowing lines in /etc/ssh/sshd_config
 
 ClientAliveInterval 30
+
 ClientAliveCountMax 9999
+
 TCPKeepAlive yes
+
