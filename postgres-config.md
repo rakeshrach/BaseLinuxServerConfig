@@ -41,7 +41,7 @@ List tables in databases using psql
 ```
 (d stands for describe)
 
-+ gives more details:
+For more details:
 ```
 \d+
 ```
