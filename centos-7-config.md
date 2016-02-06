@@ -7,9 +7,9 @@ passwd
 
 Add the new user to the default sudo group, wheel:
 ```
-adduser admin
-passwd admin
-usermod -a -G wheel admin
+adduser an_admin_user
+passwd password
+usermod -a -G wheel an_admin_user
 visudo
 ```
 
@@ -41,4 +41,6 @@ Add/modify the folowing lines in /etc/ssh/sshd_config
 ClientAliveInterval 30
 ClientAliveCountMax 9999
 TCPKeepAlive yes
+
+PasswordAuthentication no
 ```
