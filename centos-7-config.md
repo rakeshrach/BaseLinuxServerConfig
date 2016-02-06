@@ -41,6 +41,16 @@ Add/modify the folowing lines in /etc/ssh/sshd_config
 ClientAliveInterval 30
 ClientAliveCountMax 9999
 TCPKeepAlive yes
-
-PasswordAuthentication no
 ```
+
+
+## Setting up SSH with deployment key for read-only access to repository
+Instructions at: 
+https://confluence.atlassian.com/bitbucket/set-up-ssh-for-git-728138079.html
+https://confluence.atlassian.com/bitbucket/use-deployment-keys-294486051.html
+1. General info: https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys--2
+
+### Once all setup, test your deployment key access to repository using:
+ssh -T git@bitbucket.org
+
+(See https://confluence.atlassian.com/bitbucket/troubleshoot-ssh-issues-271943403.html)
