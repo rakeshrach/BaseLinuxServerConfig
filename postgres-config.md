@@ -3,7 +3,7 @@ Full instructions at https://www.digitalocean.com/community/tutorials/how-to-ins
 
 ## Setup a new database
 ```
-initdb /usr/local/var/postgres -E utf8
+sudo postgresql-setup initdb
 ```
 
 ##  Start a database
