@@ -8,7 +8,7 @@ passwd
 Add the new user to the default sudo group, wheel:
 ```
 adduser an_admin_user
-passwd password
+passwd an_admin_user
 usermod -a -G wheel an_admin_user
 visudo
 ```
